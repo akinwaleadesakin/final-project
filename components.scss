@@ -1,0 +1,64 @@
+.logo {
+    width: 92px;
+    height: 42px;
+    background-image: url("../images/logo-black.svg");
+}
+
+.logo-white {
+    width: 92px;
+    height: 42px;
+    background-image: url("../images/logo-white.svg");
+}
+
+.header-box {
+    width: 229px;
+    border-bottom: 2px solid black;
+    h1 {
+        @include common-text(25px);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10.5px;
+    }
+}
+
+.date-box-sm {
+    width: 60px;
+    height: 60px;
+    background-color: #EE4367;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans';
+    padding: 10px 17px;
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+}
+
+.date-box-lg {
+    width: 155px;
+    height: 155px;
+    background-color: #EE4367;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans';
+    padding: 26px 44px;
+    h2 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 31px;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+}

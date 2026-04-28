@@ -1,0 +1,105 @@
+.home-content {
+    .hero {
+        height: 500px;
+        background-image: linear-gradient(rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)),
+        url(../images/home-hero.jpg);
+        color: white;
+        position: relative;
+        text-align: center;
+        h1 {
+            font-family: 'PT Serif';
+            font-size: 40pt;
+            padding-top: 155px;
+            margin-bottom: 0;
+        }
+        h4 {
+            @include common-smh(italic, #EE4367);
+        }
+        p {
+            @include common-smh(italic, white);
+            //width: 32.5%;
+            max-width: 416px;
+            margin: 50px auto;
+        }
+        .link-button {
+            @include site-button;
+            position: absolute;
+            left: 45%;
+            bottom: 73px;
+        }
+    }
+    .mission-statement {
+        width: 61.6%;
+        max-width: 789px;
+        min-height: 300px;
+        margin: 0 auto 20px auto;
+        p {
+            @include common-text;
+            font-style: italic;
+            font-weight: 500;
+            color: #FFD140;
+            padding-top: 77px;
+        }
+        h4 {
+            font-family: 'PT Serif';
+            font-size: 15px;
+            color: #EE4367;
+            margin-bottom: 0;
+        }
+        h6 {
+            font-family: 'PT Serif';
+            font-size: 10px;
+            color: #A8A8A8;
+            padding-top: 5px;
+        }
+    }
+    .upcoming-events {
+        background-color: #540D6E;
+        min-height: 320px;
+        color: white;
+        padding: 50px 40px;
+        margin: 0 auto;
+        .events-header {
+            width: 30.6%;
+            max-width: 392px;
+            border-bottom: 2px solid white;
+            h1 {
+                text-transform: uppercase;
+                font-family: 'Gill Sans';
+                font-weight: 100;
+                font-size: 25px;
+                margin-bottom: 10.5px;
+            }
+        }
+        .events-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 34.5px auto;
+            justify-content: space-evenly;
+            .event-item {
+                display: flex;
+                .event-text {
+                    margin: 0 20px;
+                    width: 140px;
+                    h4 {
+                        @include common-text;
+                    }
+                    p {
+                        @include common-text(13px);
+                        color: #EE4367;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+ .home-content {
+     .hero {
+         .link-button {
+             left: 40%;
+         }
+     }
+ }
+}

@@ -1,0 +1,85 @@
+footer {
+    min-height: 455px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #EE4367;
+    color: white;
+    padding: 36px;
+    @include common-text(16px);
+    text-align: center;
+    p {
+        color: rgba(255,255,255,0.5);
+        font-size: 12px;
+    }
+    div {
+        margin: 0 auto;
+    }
+    .footer-address{
+        text-align: center;
+        margin-top: 46px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .join-newsletter {
+        width: 54.4%;
+        max-width: 696px;
+        height: 60px;
+        display: flex;
+        margin-top: 46px;
+        input {
+            max-width: 529px;
+            width: 76%;
+            height: 60px;
+            border: none;
+            background-color: #F56B88;
+            color: white;
+            padding: 20px;
+            @include common-text(16px);
+        }
+        ::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        button {
+            width: 167px;
+            height: 60px;
+            background-color: white;
+            color: #EE4367;
+            text-transform: uppercase;
+            border: none;
+            letter-spacing: 1.5px;
+            @include common-text(16px);
+        }
+    }
+    .sm-links {
+        margin: 30px auto;
+        max-width: 157px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+        }
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        .join-newsletter {
+            flex-wrap: wrap;
+            justify-content: center;
+            input {
+                margin-bottom: 20px;
+            }
+        }
+
+        .sm-links {
+            padding-top: 80px;
+        }
+    }
+}

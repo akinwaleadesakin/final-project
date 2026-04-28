@@ -1,0 +1,143 @@
+.gallery-content {
+    width: 76.6%;
+    max-width: 980px;
+    margin: 65.5px auto;
+    .gallery-top {
+        margin-top: 29.5px;
+        display: flex;
+        justify-content: space-between;
+        #galleryOne {
+            width: 489px;
+            height: 187px;
+            background-image: linear-gradient(rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)),
+            url(../images/1.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        #galleryTwo {
+            width: 187px;
+            height: 187px;
+            background-image: linear-gradient(rgba(238, 67, 103, 0.5), rgba(238, 67, 103, 0.5)),
+            url(../images/2.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        #galleryThree {
+            width: 265px;
+            height: 187px;
+            background-image: linear-gradient(rgba(8, 173, 105, 0.5), rgba(8, 173, 105, 0.5)),
+            url(../images/3.jpg);
+            background-position: center;
+            background-size: cover; 
+        }
+    }
+    .gallery-bottom {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        #galleryFour {
+            width: 603px;
+            height: 306px;
+            background-image: linear-gradient(rgba(84, 13, 110, 0.5), rgba(84, 13, 110, 0.5)),
+            url(../images/4.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #galleryFive {
+            width: 355px;
+            height: 306px;
+            background-image: linear-gradient(rgba(59, 206, 171, 0.5), rgba(59, 206, 171, 0.5)),
+            url(../images/5.png);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    
+    .gallery-hero {
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        h1 {
+            @include common-text(300px);
+            margin-bottom: 0;
+            position: absolute;
+            bottom: -69px;
+        }
+        h2 {
+            position: absolute;
+            @include common-text(140px);
+            bottom: -46px;
+            left: 220px;
+        }
+    
+    }
+    .gallery-one {
+        background-image: linear-gradient(rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)),
+            url(../images/1.png);
+        color: rgba(255, 209, 64, 0.95);
+    }
+    .gallery-two {
+        background-image: linear-gradient(rgba(238, 67, 103, 0.5), rgba(238, 67, 103, 0.5)),
+        url(../images/2.jpeg);
+        color: rgba(238, 67, 103, 0.95);
+    }
+    .gallery-three {
+        background-image: linear-gradient(rgba(8, 173, 105, 0.5), rgba(8, 173, 105, 0.5)),
+        url(../images/3.jpg);
+        color: rgba(8, 173, 105, 0.95);
+    }
+    .gallery-four {
+        background-image: linear-gradient(rgba(84, 13, 110, 0.5), rgba(84, 13, 110, 0.5)),
+            url(../images/4.jpg);
+        color: rgba(84, 13, 110, 0.95);
+        h2 {
+            font-size: 115px;  
+        }
+    }
+    .gallery-five {
+        background-image: linear-gradient(rgba(59, 206, 171, 0.5), rgba(59, 206, 171, 0.5)),
+        url(../images/5.png);
+        color: rgba(59, 206, 171, 0.95);
+        h2 {
+            font-size: 115px;
+        }
+    }
+    .gallery-article {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50.5px;
+        p {
+            @include common-text(16px);
+            font-style: italic;
+            font-weight: lighter;
+        }
+        .p-left {
+            max-width: 490px;
+            width: 50%;
+        }
+        .p-right {
+            max-width: 451px;
+            width: 46%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .gallery-content {
+        a {
+            margin-bottom: 20px;
+        }
+        .gallery-top {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .gallery-bottom {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
