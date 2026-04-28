@@ -4,7 +4,7 @@
 This is a multi-page website built with HTML, CSS, and JavaScript using the Module Pattern for content management.
 
 ## Live Link
-[View Project](https://in-info-web4.luddy.indianapolis.iu.edu/~aadesaki/n215/final-project/)
+(https://in-info-web4.luddy.indianapolis.iu.edu/~aadesaki/n215/final-project/)
 
 ## Pages
 - **Home** - Hero section, mission statement, and upcoming events
